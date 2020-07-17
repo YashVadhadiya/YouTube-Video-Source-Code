@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffa500;
+}
+
+.loading:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    border-top: 7px solid #fff;
+    border-right: 7px solid transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    animation: spin 1.25s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
